@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&display=swap" rel="stylesheet">
+  
+  </head>
+  <body>
+    <nav class="bg-indigo-900">
+      <div class="container mx-auto py-3">
+        <div class="flex items-center justify-between">
+          <div class="text-white text-xl font-bold">
+            <a href="index.html" >Matrix</a>
+          </div>
+          <div class="hidden md:block">
+            <ul class="flex space-x-4">
+              <li><a href="index.html" class="text-white pr-5">Home</a></li>
+              <li><a href="help.html" class="text-white pr-5">Help</a></li>
+              <li><a href="about.html" class="text-white pr-5">About</a></li>
+              <li>
+                <a href="kalkulator.html" class="text-white pr-8">Calculator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidebar">
+      <div class="top">
+          <div class="logo">
+              <span>MATRIKS</span>
+          </div>
+          <i class='bx bx-menu' id="btn"></i>
+      </div>
+
+      <ul>
+          <li>
+              <a href="index.html">
+                  <i class="bx bx-home"></i>
+                  <span class="nav-item">Beranda</span>
+              </a>
+              <span class="tooltip">Beranda</span>
+          </li>
+
+          <li>
+              <a href="kalkulator.html">
+                  <i class="bx bx-calculator"></i>
+                  <span class="nav-item">Kalkulator</span>
+              </a>
+              <span class="tooltip">Kalkulator</span>
+          </li>
+
+          <li>
+              <a href="about.html">
+                  <i class="bx bx-group"></i>
+                  <span class="nav-item">About</span>
+              </a>
+              <span class="tooltip">About</span>
+          </li>
+
+          <li>
+              <a href="help.html">
+                  <i class="bx bx-help-circle"></i>
+                  <span class="nav-item">Help</span>
+              </a>
+              <span class="tooltip">Help</span>
+          </li>
+
+      </ul>
+
+  </div>
+
+    <div class="container mx-auto py-8">
+      <section id="home" class="flex items-center justify-center">
+        <div class="w-1/2">
+          <img
+            class="rounded-full h-20 w-20 mx-auto"
+            src="image/poto1.jpg"
+            alt="Pre-Calculus in Everyday Life"
+          />
+          <div class="text-center">
+            <p class="text-gray-600">KALKULATOR</p>
+            <h2 class="text-3xl font-bold mb-4">DETERMINAN MATRIKS</h2>
+            <p class="text-700 mb-4">
+              “Intellectual growth should commence at birth and cease only at death.”  ― Albert Einstein
+            </p>
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="Help" class="flex items-center justify-center py-8">
+        <div class="w-1/2 pl-20">
+          <div class="text-center mb-8 pl-20">
+            <h2 class="text-3xl font-bold mb-4 py-6">MATRIKS</h2>
+            <p class="text-gray-700 mb-4">
+              Matriks adalah sebuah susunan berbentuk persegi atau berbentuk
+              baris dan kolom yang terdiri dari bilangan-bilangan atau
+              elemen-elemen yang diatur dalam bentuk tabel.
+            </p>
+            <p class="text-gray-700 mb-4">
+              Determinan matriks adalah sebuah nilai skalar yang terkait dengan
+              matriks persegi. Determinan memberikan informasi tentang
+              sifat-sifat geometris dan linear dari matriks tersebut. Secara
+              intuitif, determinan matriks memberikan ukuran perubahan volume
+              atau orientasi yang terjadi ketika matriks digunakan dalam
+              transformasi linier.
+            </p>
+            <button class="learn-more pt-20">
+              <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+              </span>
+              <span class="button-text"><a href="kalkulator.html">coba kalkulator</a></span>
+            </button>
+            
+
+          </div>
+        </div>
+        <div class="w-1/2">
+          <img
+            src="image/poto4.png"
+            alt="Online Learning"
+            class="rounded-lg pl-20"
+          />
+        </div>
+      </section>
+
+    </div>
+
+    <script>
+      let btn = document.querySelector('#btn');
+      let sidebar = document.querySelector('.sidebar');
+  
+      btn.onclick = function () {
+          sidebar.classList.toggle('active');
+      }
+  </script>
+
+  </body>
+</html>

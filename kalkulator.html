@@ -1,0 +1,104 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathrix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type = "text/css" href = "kalkulator.css">
+    <script src="kalkulatormatriks.js" ></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <nav class="bg-indigo-900 shadow-lg">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-white text-2xl font-bold">
+            <a href="#">Matrix</a>
+          </div>
+          <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="text-white hover:text-gray-300 pr-5">Home</a>
+            <a href="help.html" class="text-white hover:text-gray-300 pr-5">Help</a>
+            <a href="about.html" class="text-white hover:text-gray-300 pr-5">About</a>
+            <a href="kalkulator.html" class="text-white hover:text-gray-300 pr-8">Calculator</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="flex">
+      <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <span>MATRIKS</span>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+    
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="bx bx-home"></i>
+                    <span class="nav-item">Beranda</span>
+                </a>
+                <span class="tooltip">Beranda</span>
+            </li>
+    
+            <li>
+                <a href="kalkulator.html">
+                    <i class="bx bx-calculator"></i>
+                    <span class="nav-item">Kalkulator</span>
+                </a>
+                <span class="tooltip">Kalkulator</span>
+            </li>
+    
+            <li>
+                <a href="about.html">
+                    <i class="bx bx-group"></i>
+                    <span class="nav-item">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+    
+            <li>
+                <a href="help.html">
+                    <i class="bx bx-help-circle"></i>
+                    <span class="nav-item">Help</span>
+                </a>
+                <span class="tooltip">Help</span>
+            </li>
+    
+        </ul>
+    
+    </div>
+      </div>
+  
+
+<div id="gambar">
+  <image src="rumus 2x2 (1).jpg">
+  </image>
+</div>
+
+<div>
+    <label for="matrixSize">Ukuran Matriks: </label>
+    <select id="matrixSize" onclick="generateMatrix()">
+       <ul class="text-white">
+        <option value="2">2x2</option>
+        <option value="3">3x3</option>
+       </ul>
+    </select>
+</div>
+
+
+
+<div id="matrixContainer"></div>
+    <ul class="hitung">
+    <button onclick="calculateDeterminant()">Hitung Determinan</button>
+    </ul>
+<div id="result"></div>
+
+</body>
+</html>

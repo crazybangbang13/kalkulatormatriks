@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix</title>
+    <link rel="stylesheet" href="about.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&display=swap" 
+    rel="stylesheet">
+</head>
+
+
+<body>
+  <nav class="bg-indigo-900">
+    <div class="container mx-auto py-3">
+      <div class="flex items-center justify-between">
+        <div class="text-white text-xl font-bold">
+          <a href="index.html" >Matrix</a>
+        </div>
+        <div class="hidden md:block">
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="text-white pr-5">Home</a></li>
+            <li><a href="help.html" class="text-white pr-5">Help</a></li>
+            <li><a href="about.html" class="text-white pr-5">About</a></li>
+            <li>
+              <a href="kalkulator.html" class="text-white pr-8">Calculator</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <span>MATRIKS</span>
+        </div>
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+
+    <ul>
+        <li>
+            <a href="index.html">
+                <i class="bx bx-home"></i>
+                <span class="nav-item">Beranda</span>
+            </a>
+            <span class="tooltip">Beranda</span>
+        </li>
+
+        <li>
+            <a href="kalkulator.html">
+                <i class="bx bx-calculator"></i>
+                <span class="nav-item">Kalkulator</span>
+            </a>
+            <span class="tooltip">Kalkulator</span>
+        </li>
+
+        <li>
+            <a href="about.html">
+                <i class="bx bx-group"></i>
+                <span class="nav-item">About</span>
+            </a>
+            <span class="tooltip">About</span>
+        </li>
+
+        <li>
+            <a href="help.html">
+                <i class="bx bx-help-circle"></i>
+                <span class="nav-item">Help</span>
+            </a>
+            <span class="tooltip">Help</span>
+        </li>
+
+    </ul>
+
+</div>
+  <div class="content">
+    <div class="responsive-container-block outer-container">
+        <div class="responsive-container-block inner-container">
+          <p class="text-blk section-head-text">
+            Meet Our Team
+          </p>
+          <p class="text-blk section-subhead-text">
+            “Teamwork makes the dream work.” – John C. Maxwell
+          </p>
+          <div class="responsive-container-block mx-8">
+            <div class="responsive-cell-block wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img class="team-img" src="image/bambang1.jpg">
+                </div>
+                <p class="text-blk text-xl name">
+                  Bambang  Nur Hidayat
+                </p>
+                <p class="text-blk position">
+                  237006064
+                </p>
+              </div>
+            </div>
+            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img class="team-img" src="image/alwi1.png">
+                </div>
+                <p class="text-blk text-xl name">
+                  Alwi Muhamad Rantisi
+                </p>
+                <p class="text-blk position">
+                  237006052
+                </p>
+              </div>
+            </div>
+            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img class="team-img" src="image/sofi1.JPG">
+                </div>
+                <p class="text-blk text-xl name">
+                  Sofi Azhari Amini
+                </p>
+                <p class="text-blk position">
+                  237006026
+                </p>
+              </div>
+            </div>
+            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img class="team-img" src="image/wiga1.jpg">
+                </div>
+                <p class="text-blk text-xl name">
+                  Wiga Ade Hilman
+                </p>
+                <p class="text-blk position">
+                  237006042
+                </p>
+              </div>
+            </div>
+
+            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img class="team-img" src="image/guna1.jpg">
+                </div>
+                <p class="text-blk text-xl name">
+                  Guna Pandu Prilana
+                </p>
+                <p class="text-blk position">
+                  237006053
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+      <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+    
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
+

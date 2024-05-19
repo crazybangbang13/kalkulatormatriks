@@ -1,0 +1,248 @@
+* {
+    font-family: 'Montserrat', 'Open Sans';
+}
+
+body {
+    background-image: url('image/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60px;
+    background-color: #332d7d;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active {
+    width: 200px;
+    background-color: #332d7d;
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: #B6B9BC;
+    top: 0.5rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sidebar.active #btn {
+    left: 90%;
+}
+
+.sidebar .top .logo {
+    color: #B6B9BC;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.sidebar.active .top .logo {
+    opacity: 1;
+}
+
+
+.top .logo {
+    padding-bottom: 15px;
+    padding-top: 16px;
+}
+
+.top .logo i {
+    font-size: 20rex;
+    margin-right: 10px;
+}
+
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+}
+
+.sidebar ul li a {
+    color: #B6B9BC;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2b343f;
+    color: #ffffff;
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    padding-right: 18px;
+}
+
+.sidebar .nav-item {
+    opacity: 0;
+}
+
+.sidebar.active .nav-item {
+    opacity: 1;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    color: #cacaca;
+    left: 80px;
+    top: 10%;
+    transform: translateY(-50%);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 0.4rem 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    opacity: 0;
+    transition: 0s;
+    pointer-events: none;
+}
+
+.sidebar ul li:hover .tooltip {
+    top: 50%;
+    transition: all 0.5s ease;
+    opacity: 100%;
+    background-color: #332d7d;
+}
+
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+
+div.text-white {
+    position: relative;
+    padding-left: 100px;
+}
+
+.text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+}
+
+.responsive-cell-block {
+    min-height: 75px;
+}
+
+.responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: space-evenly;
+}
+
+
+.inner-container {
+    max-width: 1000px;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+}
+
+.section-head-text {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    color: rgb(67, 77, 190);
+    margin: 0 0 10px 0;
+}
+
+.section-subhead-text {
+    font-size: 20px;
+    color: rgb(56, 47, 47);
+    line-height: 35px;
+    max-width: 470px;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+
+.img-wrapper {
+    width: 100%;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.name {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(102, 102, 102);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+.position {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 135, 177);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+}
+
+.team-img {
+        border-radius: 50%;
+        margin-left: 38px;
+        width: 200px;
+        height: 200px;
+        border: 5px solid rgb(57, 78, 196);
+}
+
+.team-card-container {
+    width: 280px;
+    margin: 0 0 40px 0;
+}
+
+@media (max-width: 500px) {
+    .outer-container {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .section-head-text {
+        text-align: center;
+    }}
